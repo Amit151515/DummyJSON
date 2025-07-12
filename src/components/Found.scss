@@ -1,0 +1,129 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+    flex-wrap: wrap;
+    &__input{
+        padding: 8px 12px;
+        font-size: 16px;
+        border: 2px solid black;
+        border-radius: 8px;
+        width: 220px;
+        outline: none;
+        transition: border-color 0.3s ease;
+    }
+    &__button{
+        padding: 8px 16px;
+        font-size: 16px;
+        background-color: black;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+  }
+
+  
+  .form__input:focus {
+    border-color: black;
+  }
+  .form__button:hover {
+    background-color: #000;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    &__item{
+        position: relative;
+        background-color: #2e2e2e;
+        border-radius: 10px;
+        color: white;
+        width: 230px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 430px;
+        padding: 15px 15px 60px;
+        &-img{
+            width: 100%;
+            border-radius: 8px;
+            height: 150px;
+            object-fit: cover;
+        }
+        &-box{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            &-span{
+                background-color: red;
+                color: white;
+                padding: 3px 6px;
+                border-radius: 5px;
+                font-size: 13px;
+                font-weight: bold;
+            }
+        }
+    }
+  }
+  
+  .products__item:hover {
+    transform: translateY(-5px);
+  }
+  
+
+  
+  .products__item-title {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .products__item-text {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  .new-price {
+    color: #00ff6a;
+    font-weight: bold;
+  }
+  
+  .stock {
+    color: #ffd700;
+  }
+  
+  .products__item-box-link {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 12px;
+    background-color: #444;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .products__item-box-link:hover {
+    background-color: #fff;
+    color: #444;
+    border: 1px solid #444;
+  }
+  

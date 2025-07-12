@@ -1,0 +1,43 @@
+.main{
+    padding-top: 20px;
+    &__title{
+        font-family: Arial;
+        font-size: 21px;
+        color: black;
+        text-align: center;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.head_title{
+    font-size: 24px;
+}
+
+.main__box-catalog-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+    gap: 7px;
+    margin: 0 auto;
+}
+
+.main__box-catalog-value{
+    padding: 7px 9px;
+    background: #686464;
+    border-radius: 7px;
+    font-size: 15px;
+    color: white;
+}
+
+.main__box-catalog-value.active {
+    background-color: #fff;
+    color: #444;
+    border: 2px solid #000; 
+    border-radius: 7px;      
+  }

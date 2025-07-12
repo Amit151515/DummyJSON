@@ -1,0 +1,49 @@
+.paginate {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.paginate__box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginate__box-count {
+  background-color: #444;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.paginate__box-count.active {
+  background-color: white;
+  color: #444;
+  border: 1px solid #444;
+  font-weight: bold;
+}
+
+.paginate__arrow {
+  background-color: #333;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.paginate__arrow:hover:enabled {
+  background-color: #111;
+}
+
+.paginate__arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,38 @@
+.nav{
+    width: 100%;
+    background: black;
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 0;
+        &-left{
+            &-title{
+                font-family: Arial;
+                font-size: 28px;
+                color: white;
+            }
+        }
+        &-right{
+            display: flex;
+            gap: 30px;
+            &-link{
+                font-family: Arial;
+                font-size: 18px;
+                color: white;
+            }
+        }
+    }
+}
+
+.nav__box-right-img {
+    width: 20px;
+    height: 20px;
+    color: white; 
+    transition: 0.2s ease;
+  }
+  
+  .nav__box-right-link:hover .nav__box-right-img {
+    color: #00ffcc;
+  }
+  
