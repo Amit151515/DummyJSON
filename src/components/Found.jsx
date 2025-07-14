@@ -64,7 +64,7 @@ const Found = () => {
           </div>
         ))
       ) : (
-        <h2>Загрузка...</h2>
+        <h2 className="loader">Loading</h2>
       )}
     </div>
     </div>

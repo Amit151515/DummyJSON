@@ -56,7 +56,7 @@ const FoundItem = () => {
             <Link to="/find" className="product__item-box-link">Назад</Link>
           </div>
         ) : (
-          <h2>Загрузка...</h2>
+          <h2 className="loader">Loading</h2>
         )}
       </div>
     </>
