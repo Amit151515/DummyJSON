@@ -39,33 +39,31 @@ const Paginate = () => {
     <div className="paginate">
       <div className="container">
         <div className="paginate__box">
-          <button
-            className="paginate__arrow"
-            onClick={handlePrev}
-            disabled={activePage === 1}
-          >
-            ←
-          </button>
-
-          {[activePage - 1, activePage, activePage + 1].map((page) =>
-            page > 0 && page <= maxPage ? (
-              <div
-                key={page}
-                className={`paginate__box-count ${activePage === page ? 'active' : ''}`}
-                onClick={() => handlePageClick(page)}
-              >
-                {page}
-              </div>
-            ) : null
+          {activePage > 1 && (
+            <button className="paginate__arrow" onClick={handlePrev}>
+              ←
+            </button>
           )}
-
-          <button
-            className="paginate__arrow"
-            onClick={handleNext}
-            disabled={activePage === maxPage}
-          >
-            →
-          </button>
+  
+          {[activePage - 1, activePage, activePage + 1].map(
+            (page) =>
+              page > 0 &&
+              page <= maxPage && (
+                <div
+                  key={page}
+                  className={`paginate__box-count ${activePage === page ? 'active' : ''}`}
+                  onClick={() => handlePageClick(page)}
+                >
+                  {page}
+                </div>
+              )
+          )}
+  
+          {activePage < maxPage && (
+            <button className="paginate__arrow" onClick={handleNext}>
+              →
+            </button>
+          )}
         </div>
       </div>
     </div>
